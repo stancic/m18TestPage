@@ -1,0 +1,521 @@
+/******************FONTS**********************/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Oswald');
+
+//font-family: 'Oswald', sans-serif; 
+//font-family: 'Noto Serif', serif;
+
+/******************FONTS END**********************/
+
+/***** SOME BASIC STYLES*************/
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; 
+}
+
+p,h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul{
+    li{
+        list-style-type: none;
+    }
+}
+
+
+/***********SOME BASIC STYLES*************/
+
+.white-space{
+    padding-top: 10em;
+}
+
+/********* HEADER ************/
+
+.upper-part {
+    background: url('../img/background/about-us.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 80%;
+    position: relative;
+
+    .show {
+        cursor: pointer;
+        position: relative;
+        display: inline;
+        left: 50%;
+        margin: 0 0 0 -3em;
+        img {
+            width: 6em;
+            height: 6em;
+        }
+    }
+
+    h1{
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        color: white;
+        font-size: 5em;
+        letter-spacing: 4px;
+    }
+}
+
+/********* HEADER END ************/
+
+/**********************SOCIAL***********************/
+
+.social{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    text-align: center;
+    width: 1.5em;
+    background: black;
+    border-radius: 15px 0 0 15px;
+    z-index: 4;
+    li{
+        color: white;
+        opacity: 0.5;
+        transition: .4s;
+        &:hover{
+            
+            cursor: pointer;
+            opacity: 1;
+        }
+        a{
+            
+            color: white;
+        }
+    }
+}
+
+/**********************SOCIAL END***********************/
+
+
+
+
+/*********TEXT PART************/
+#white-text{
+    padding: 10em 0;
+    .left-white{
+        float: left;
+        margin-left: 8em;
+        padding: 0.3em 4em 0 0;
+        border-top: 1px solid black;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    .right-white{
+        display: block;
+        margin: 17em 10em 0 40%;
+    }
+  
+}
+
+/*********TEXT PART END************/
+
+
+
+
+
+//MUTUAL H2
+h2{
+   
+    margin-left: 40%;
+    position: absolute;
+    font-size: 2em;
+    margin-right: 3em;
+}
+
+
+/*************EVERY SECOND PARAGRAPH***********/
+
+#black-text{
+    padding: 10em 0;
+    background: black;
+    color: white;
+    .left-black{
+        position: absolute;
+        float: left;
+        margin-left: 8em;
+        padding: 0.3em 4em 0 0;
+        border-top: 1px solid white;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    
+      .right-black{
+           display: block;
+            margin: 17em 10em 0 40%;;
+    }
+    .left-team{
+        float: left;
+        margin-left: 10em;
+        font-size: 1em;
+        display: block;
+        width: 24em;
+        position: relative;
+        margin-top: 12em;
+    }
+}
+
+/*************EVERY SECOND PARAGRAPH***********/
+
+
+/************ TEAM PART ************/
+
+.row{
+    width: 100%;
+    margin-top: 3.5em;
+    content: ' ';
+    margin-bottom: 3em;
+    .column{
+        height: 100%;
+        margin-top: 2em;
+        text-align: center;
+        .team-images{
+            background: blue;
+            width: 250px;
+            height: 300px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin-left: 5em;
+            &:first-child{
+                margin-left: 0;
+            }
+            .about{
+                position: absolute;
+                width: 100%;
+                background-color: grey;
+                bottom: 0;
+                height: 4em;
+                text-align: left;
+            }
+            .info{
+                width: 100%;
+                height: 100%;
+                background: red;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+/************ TEAM PART END ************/
+
+
+/****************** BE A PART OF US ****************/
+
+.scard-holder{
+    width: 100%;
+    text-align: center;
+    .student-card {
+        width: 34em;
+        height: 34em;
+        position: relative;
+      
+    } 
+}
+
+
+/****************** BE A PART OF US END ****************/
+
+
+/*********TEXT PART END END END************/
+
+
+
+/**********NAVIGATION************/
+
+#navigation {
+    z-index: 2;
+    position: fixed;
+    background: #F4F4F2;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    .showup {
+        width: 6em;
+        height: 6em;
+        cursor: pointer;
+        z-index: 3;
+        position: relative;
+        left: 50%;
+        margin-left: -3em;
+        top: 0;
+        img {
+            width: 6em;
+            height: 6em;
+        }
+    }
+    .bottom{
+        padding: 0;
+        margin: 0;   
+    }
+    ul{
+        margin: 0;
+        padding: 1em 0;
+        position: relative;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 3em;
+            a{
+                text-transform: uppercase;
+                font-size: 1.7em;
+                color: black;
+                font-weight: 800;
+                transition: .3s ease;
+                &:hover{
+                    color: #F0A531;
+                }
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+
+  
+/**********NAVIGATION END************/
+
+/**************BUTTON***************/
+
+
+
+/**************BUTTON END***************/
+
+
+
+@media(max-width: 1024px){
+    
+    #navigation{
+        ul{
+            li{
+                font-size: 0.8em;
+            }
+        }
+    }    
+    .row{
+    width: 100%;
+    margin-top: 3.5em;
+    content: ' ';
+    margin-bottom: 3em;
+    .column{
+        height: 100%;
+        margin-top: 2em;
+        text-align: center;
+        .team-images{
+            background: blue;
+            width: 209px;
+            height: 250px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin-left: 3em;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
+    .scard-holder{
+        width: 100%;
+        text-align: center;
+        .student-card{
+            margin-top: 2em;
+            width: 20em;
+            height: 20em;
+        }
+    }
+}
+
+
+@media (max-width: 764px){
+    
+/********UPPER PART*********/
+    .social{
+        display: none;
+    }
+    .upper-part{
+        h1{
+            font-size: 3em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+
+/********UPPER PART END*********/
+    
+/****** NAVIGATION **************/
+    
+    #navigation{
+        width: 100%;
+        height: 100%;
+        background: rgba(black, 0.7);
+        img{
+             -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+        }
+        .bottom{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+                li{
+                    margin: 2%;
+                    padding: 0;
+                    display: inline-block;
+                    text-align: center;
+                }
+        }
+        ul{
+            li{
+                font-size: 1em;
+                display: block;
+                padding-top: 4em;
+                color: white;
+                &:nth-child(1){
+                    padding-top: 0;
+                }
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    
+/****** NAVIGATION END **************/
+
+
+
+    //MUTUAL H2
+    h2{
+        margin-left: 25%;
+        font-size: 1em;
+        margin-right: 25%;
+        position: relative;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+/************* TEXT PART ************/
+    
+    
+    #white-text {
+        padding: 10em 0;
+        .left-white {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 16px;
+            font-size: 2em;
+            border: 0;
+        }
+
+        .right-white {
+            display: block;
+            font-size: 16px;
+            padding: 4em 4em;
+            margin: 0;
+        }
+    }
+    
+       #black-text {
+           padding: 10em 0;
+
+           .left-black {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 16px;
+                font-size: 2em;
+                border: 0;
+                position: relative;
+           }
+
+           .right-black {
+               display: block;
+               font-size: 16px;
+               padding: 4em 4em;
+               margin: 0;
+           }
+           
+           .left-team{
+               display: block;
+               font-size: 16px;
+               padding: 4em 4em;
+               margin: 0;
+               position: relative;
+               width: auto;
+           }
+           .scard-holder{
+               width: 100%;
+               text-align: center;
+               .student-card{
+                   margin-top: 20px;
+                   width: 17em;
+                   height: 17em;
+                }
+            }
+       }
+
+/************* TEXT PART END ************/
+    
+/*************** TEAM ******************/
+      .row {
+          width: 100%;
+          margin-top: 3.5em;
+          content: ' ';
+          margin-bottom: 3em;
+          .column {
+              height: 100%;
+              margin-top: 2em;
+              text-align: center;
+              .team-images {
+                  background: blue;
+                  width: 170px;
+                  height: 200px;
+                  position: relative;
+                  display: block;
+                  text-align: center;
+                  margin-left: auto;
+                  margin-right: auto;
+                  &:first-child{
+                      margin-left: auto;
+                      margin-right: auto;
+                  }
+              }
+          }
+      }
+/*************** TEAM  END ******************/
+}
