@@ -136,38 +136,6 @@ ul{
 
 /****************** HEADER END *********************/
 
-
-/**********************SOCIAL***********************/
-
-.social{
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    top: 0;
-    font-size: 2em;
-    text-align: center;
-    width: 1.4em;
-    background: black;
-    border-radius: 15px 0 0 15px;
-    z-index: 4;
-    li{
-        color: white;
-        opacity: 0.5;
-        transition: .4s;
-        &:hover{
-            
-            cursor: pointer;
-            opacity: 1;
-        }
-        a{
-            color: white;
-        }
-    }
-}
-
-/**********************SOCIAL END***********************/
-
 /******************** CONTACT US PART ************************/
 
 .row{
@@ -237,10 +205,6 @@ ul{
 /*********************** MOBILE PART ******************************/
 
 @media (max-width: 764px){
-    
-    .social{
-        display: none;
-    }
     
 /******************** HEADER PART *********************/
     

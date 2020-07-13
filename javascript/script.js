@@ -18,7 +18,7 @@ $(document).ready(function(){
         'img/background/bg5.jpg'
     ],{
         fade: 3000,
-        duration: 2000
+        duration: 4000
     });
 
 });

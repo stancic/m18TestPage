@@ -50,7 +50,6 @@ ul{
 
 .upper-part {
     background: url('../img/background/about-us.jpg');
-    background-size: cover;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -80,38 +79,6 @@ ul{
 }
 
 /********* HEADER END ************/
-
-/**********************SOCIAL***********************/
-
-.social{
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    top: 0;
-    font-size: 2em;
-    text-align: center;
-    width: 1.5em;
-    background: black;
-    border-radius: 15px 0 0 15px;
-    z-index: 4;
-    li{
-        color: white;
-        opacity: 0.5;
-        transition: .4s;
-        &:hover{
-            
-            cursor: pointer;
-            opacity: 1;
-        }
-        a{
-            
-            color: white;
-        }
-    }
-}
-
-/**********************SOCIAL END***********************/
 
 
 
@@ -359,9 +326,7 @@ h2{
 @media (max-width: 764px){
     
 /********UPPER PART*********/
-    .social{
-        display: none;
-    }
+    
     .upper-part{
         h1{
             font-size: 3em;
@@ -414,8 +379,7 @@ h2{
     }
     
 /****** NAVIGATION END **************/
-
-
+    
 
     //MUTUAL H2
     h2{

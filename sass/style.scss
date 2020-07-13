@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif|Oswald");
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
-
 
 html,body {
     margin: 0;
@@ -42,48 +40,81 @@ ul{
 
 
 
-/************************* NAVIGATION FOR PC **************************/
+/*******************LINKS******************/
 
-#nav-pc{
-    position: relative;
-    font-size: 1.2em;
-    text-align: center;
-    height: 3em;
+a{
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+#navigation {
+    z-index: 2;
+    position: fixed;
+    background: #F4F4F2;
+    padding: 1em 0 1em 0;
     width: 100%;
-    line-height: 3em;
-    .links{
-        position: absolute;
-        padding: 0;
-        background: rgba(white, .8);
-        width: 70%;
-        top: 50%;
+    .showup {
+        width: 6em;
+        height: 6em;
+        cursor: pointer;
+        z-index: 3;
+        position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0 0 15px 15px;
+        margin-left: -3em;
+        top: 0;
+        img {
+            width: 6em;
+            height: 6em;
+        }
+    }
+    .bottom{
+        padding: 0;
+        margin: 0;   
+    }
+    ul{
+        margin: 0;
+        padding: 1em 0;
+        position: relative;
+        text-align: center;
         li{
             display: inline-block;
-            margin: 0 2em;
-            color: black;
-            font-family: 'Oswald', sans-serif; 
-            &::before{
-                content: "\00B7            ";
-            }
-            &::after{
-                content: "            \00B7";
-            }
+            margin: 0 3em;
             a{
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                font-size: 1.7em;
                 color: black;
-                transition: .3s;
+                font-weight: 800;
+                transition: .3s ease;
                 &:hover{
-                    opacity: .2;
+                    color: #F0A531;
                 }
+            }
+            p{
+                font-size: 1em;
             }
         }
     }
 }
 
+/*******************LINKS END******************/
 
-/************************* NAVIGATION FOR PC END **************************/
+   .show {
+        cursor: pointer;
+        position: relative;
+        display: inline;
+        left: 50%;
+        margin: 0 0 0 -3em;
+        img {
+            width: 6em;
+            height: 6em;
+        }
+    }
 
 /*********************WELCOME TEXT****************/
 
@@ -150,14 +181,14 @@ ul{
     max-width: 180px;
     position: absolute;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     width: 100%;
     bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -170,7 +201,7 @@ ul{
 
 .btn-2:hover,
 .btn-2:active {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .btn-2:after,
@@ -211,120 +242,47 @@ ul{
     position: absolute;
     padding: 0;
     margin: 0;
-    right: 0;
-    top: 20%;
-    font-size: 2em;
-    text-align: center;
-    width: 1.5em;
-    background: black;
-    border-radius: 15px 0 0 15px;
-    overflow: hidden;
-    li{
-        color: white;
-        opacity: 0.5;
-        transition: .4s;
-        &:hover{
-            cursor: pointer;
-            opacity: 1;
-        }
-        a{
+    top: 90%;
+    left: 5%;
+    ul{
+        position: relative;
+        padding: 0;
+        li{
+            position: relative;
+            font-size: 1.63em;
+            display: inline-block;
             color: white;
+            margin-left: 3em;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: .4em;
+            opacity: .3;
+            transition: .4s ease;
+            &:first-child{
+                margin-left: 0;
+                padding: .4em .8em .4em .8em;
+            }
+            &:nth-child(2){
+                padding: .4em .6em .4em .6em;
+            }
+            a{
+                color: white;
+            }
+            &:hover{
+                cursor: pointer;
+                opacity: 1;
+            }
+            
+            
         }
     }
 }
 
 /**********************SOCIAL END***********************/
 
-
-
-
-
-/*******************NAV FOR MOBILE******************/
-
-a{
-    text-decoration: none;
-    font-family: 'Noto Serif', serif;
-}
-
-ul li{
-    list-style: none;
-}
-
-
-#navigation {
-    z-index: 2;
-    position: fixed;
-    background: #F4F4F2;
-    padding: 1em 0 1em 0;
-    width: 100%;
-    .showup {
-        width: 6em;
-        height: 6em;
-        cursor: pointer;
-        z-index: 3;
-        position: relative;
-        left: 50%;
-        margin-left: -3em;
-        top: 0;
-        img {
-            width: 6em;
-            height: 6em;
-        }
-    }
-    .bottom{
-        padding: 0;
-        margin: 0;   
-    }
-    ul{
-        margin: 0;
-        padding: 1em 0;
-        position: relative;
-        text-align: center;
-        li{
-            display: inline-block;
-            margin: 0 3em;
-            a{
-                font-family: 'Oswald', sans-serif;
-                text-transform: uppercase;
-                font-size: 1.7em;
-                color: black;
-                font-weight: 800;
-                transition: .3s ease;
-                &:hover{
-                    color: #F0A531;
-                }
-            }
-            p{
-                font-size: 1em;
-            }
-        }
-    }
-}
-
-
-
-   .show {
-        cursor: pointer;
-        position: relative;
-        display: none;
-        left: 50%;
-        margin: 0 0 0 -3em;
-        img {
-            width: 6em;
-            height: 6em;
-        }
-    }
-
-/*******************NAV FOR MOBILE END******************/
-
-
 /********************ZA MOBITELE*********************/
 
-@media(max-width: 1040px){
-    
-    #nav-pc{
-        font-size: 0.9em;
-    }
+@media(max-width: 975px){
     
     .welcomeH2 {
         padding: 0;
@@ -362,16 +320,6 @@ ul li{
 }
 
 @media(max-width: 782px) {
-    .social{
-        display: none;
-    }
-    #nav-pc{
-        display: none;
-    }
-    
-    .show{
-        display: inline;
-    }
 
     .welcomeH2{
         width: 100%;
